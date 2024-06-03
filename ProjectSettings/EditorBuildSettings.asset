@@ -12,12 +12,57 @@ EditorBuildSettings:
     path: Assets/Scenes/Modality Menu.unity
     guid: eff41245e7a3b714aad7934c52d6d777
   - enabled: 1
-    path: Assets/Scenes/Modality A Level Menu.unity
+    path: Assets/Scenes/Modality A Level Selection.unity
     guid: 0edcf054c0eecde409f56a5805ad1706
+  - enabled: 1
+    path: Assets/Scenes/Modality B Level Selection.unity
+    guid: ddf92a85d3717e9479ea7975068646dc
   - enabled: 1
     path: Assets/Scenes/A1 Explanation.unity
     guid: e1a728722b38dad4c9e5395b55769bdf
   - enabled: 1
     path: Assets/Scenes/A1 Game.unity
     guid: 548c14ce26408dd4b964880088b3e56a
+  - enabled: 1
+    path: Assets/Scenes/A2 Explanation.unity
+    guid: c6142e149cc066a4db7f60914ccd40b6
+  - enabled: 1
+    path: Assets/Scenes/A2 Game.unity
+    guid: 4a1ee41b261ec6247a1e5cc75d726b48
+  - enabled: 1
+    path: Assets/Scenes/A3 Explanation.unity
+    guid: e9f4b742b8c823e468788cd2c7af6539
+  - enabled: 1
+    path: Assets/Scenes/A3 Game.unity
+    guid: ab97f579b03ee0e499bfbfe6df88c525
+  - enabled: 1
+    path: Assets/Scenes/A4 Explanation.unity
+    guid: 48174707998045d4a9672370bcbc2802
+  - enabled: 1
+    path: Assets/Scenes/A4 Game.unity
+    guid: 808881701b7393c4bae80e09bdd13685
+  - enabled: 1
+    path: Assets/Scenes/B1 Explanation.unity
+    guid: 4189ebb7625d5ca429431805bf076358
+  - enabled: 1
+    path: Assets/Scenes/B1 Game.unity
+    guid: 926545cb6e72a6c439b4525bd54b3bf5
+  - enabled: 1
+    path: Assets/Scenes/B2 Explanation.unity
+    guid: df0961d9a1e4f9e4280be6498cd5af92
+  - enabled: 1
+    path: Assets/Scenes/B2 Game.unity
+    guid: f2533053db9ba2e4498d6051336e42e7
+  - enabled: 1
+    path: Assets/Scenes/B3 Explanation.unity
+    guid: 3e302c75b71ccbc4798ddc430d1618f5
+  - enabled: 1
+    path: Assets/Scenes/B3 Game.unity
+    guid: bc861388f15e09b409c9c329163c1dd0
+  - enabled: 1
+    path: Assets/Scenes/B4 Explanation.unity
+    guid: 9191065632a219f4aba44eb4f856bf8b
+  - enabled: 1
+    path: Assets/Scenes/B4 Game.unity
+    guid: 2e982afbe626b4c4db9326e3aa9793d8
   m_configObjects: {}
