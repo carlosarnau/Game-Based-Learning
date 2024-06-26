@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 479440685}
   - component: {fileID: 479440684}
   m_Layer: 5
-  m_Name: Panel I
+  m_Name: Background Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
