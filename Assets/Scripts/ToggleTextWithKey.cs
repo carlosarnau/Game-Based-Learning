@@ -5,12 +5,11 @@ using TMPro;
 
 public class ToggleTextWithKey : MonoBehaviour
 {
-    public TextMeshProUGUI textToToggle; // Reference to the TextMeshPro text
-    public KeyCode toggleKey = KeyCode.F; // Key to toggle the text
+    public TextMeshProUGUI textToToggle;
+    public KeyCode toggleKey = KeyCode.F;
 
     private void Start()
     {
-        // Ensure the TextMeshProUGUI component is assigned
         if (textToToggle == null)
         {
             Debug.LogError("TextMeshProUGUI component not assigned!");
@@ -19,7 +18,6 @@ public class ToggleTextWithKey : MonoBehaviour
 
     private void Update()
     {
-        // Check if the specified key is pressed
         if (Input.GetKeyDown(toggleKey))
         {
             ToggleText();
@@ -30,7 +28,7 @@ public class ToggleTextWithKey : MonoBehaviour
     {
         if (textToToggle != null)
         {
-            textToToggle.enabled = !textToToggle.enabled; // Toggle the visibility
+            textToToggle.enabled = !textToToggle.enabled;
         }
     }
 }

@@ -2,7 +2,6 @@ using DialogueEditor;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DialogueEditor;
 
 public class ConversationTrigger : MonoBehaviour
 {
@@ -10,10 +9,8 @@ public class ConversationTrigger : MonoBehaviour
 
     void Update()
     {
-        // Check if the "F" key is pressed
         if (Input.GetKeyDown(KeyCode.F))
         {
-            // Start the conversation
             ConversationManager.Instance.StartConversation(myConversation);
         }
     }

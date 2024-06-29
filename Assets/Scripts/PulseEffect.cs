@@ -5,11 +5,12 @@ using TMPro;
 
 public class PulseEffect : MonoBehaviour
 {
-    public float minScale = 0.8f; // Minimum scale factor
-    public float maxScale = 1.2f; // Maximum scale factor
-    public float pulseSpeed = 1.0f; // Speed of the pulsing effect
+    public float minScale = 0.8f;
+    public float maxScale = 1.2f;
+    public float pulseSpeed = 1.0f;
 
     private TextMeshProUGUI textComponent;
+    private Coroutine pulseCoroutine;
 
     private void Start()
     {
@@ -19,15 +20,41 @@ public class PulseEffect : MonoBehaviour
             Debug.LogError("TextMeshProUGUI component not found!");
             return;
         }
-        StartCoroutine(Pulse());
+        StartPulse();
+    }
+
+    private void OnEnable()
+    {
+        StartPulse();
+    }
+
+    private void OnDisable()
+    {
+        StopPulse();
+    }
+
+    private void StartPulse()
+    {
+        if (pulseCoroutine != null)
+        {
+            StopCoroutine(pulseCoroutine);
+        }
+        pulseCoroutine = StartCoroutine(Pulse());
+    }
+
+    private void StopPulse()
+    {
+        if (pulseCoroutine != null)
+        {
+            StopCoroutine(pulseCoroutine);
+            pulseCoroutine = null;
+        }
     }
 
     private IEnumerator Pulse()
     {
-        // Initially scale to the minimum scale to avoid sudden resizing
         textComponent.transform.localScale = new Vector3(minScale, minScale, minScale);
 
-        // Loop the pulsing effect
         while (true)
         {
             // Scale up
